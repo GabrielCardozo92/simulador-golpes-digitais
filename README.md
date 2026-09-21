@@ -28,7 +28,8 @@ qualquer pessoa.
 
 ## Como usar
 
-- **Online:** https://gabrielcardozo92.github.io/simulador-golpes-digitais/
+- **Online:** https://golpeouconfiavel.netlify.app/ (link principal, para os idosos)
+- **Espelho no GitHub Pages:** https://gabrielcardozo92.github.io/simulador-golpes-digitais/
 - **Código-fonte:** https://github.com/GabrielCardozo92/simulador-golpes-digitais
 - **Localmente:** baixe a pasta e abra o arquivo `index.html` no navegador. Não
   precisa de servidor nem de instalação.
