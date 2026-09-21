@@ -72,7 +72,7 @@ avaliar cada caso de verdade:
 
 1. Falso funcionário do banco pedindo Pix para "conta segura" (golpe)
 2. Aviso legítimo do banco orientando a ligar ou ir à agência (confiável)
-3. SMS de prêmio com link falso pedindo dados do cartão (golpe)
+3. SMS de prêmio falso pedindo para clicar em um link suspeito (golpe)
 4. Compra falsa com link para "cancelar" — pergunta "O que você faz?" (golpe)
 5. Conversa comum com familiar já salvo nos contatos (confiável)
 6. Falso neto com número novo pedindo Pix urgente (golpe)
