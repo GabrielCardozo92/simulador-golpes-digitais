@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Simulador educativo para ajudar idosos a reconhecer golpes digitais (Pix, links falsos e mensagens de urgência).">
+  <meta name="theme-color" content="#0f5c5a">
+  <title>Golpe ou Confiável?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <main id="app" class="app">
+
+    <section id="tela-inicio" class="tela tela--ativa">
+      <div class="inicio">
+        <div class="inicio__topo">
+          <div class="inicio__balao inicio__balao--eles">Oi vó, troquei de número. Faz um Pix pra mim?</div>
+          <div class="inicio__balao inicio__balao--voce">Isso é golpe ou é confiável?</div>
+        </div>
+        <div class="inicio__corpo">
+          <h1 class="inicio__titulo">Golpe ou Confiável?</h1>
+          <p class="inicio__texto">
+            Você vai ver mensagens iguais às que chegam no celular. Em cada uma, diga se é golpe ou se é confiável.
+          </p>
+          <p class="inicio__texto inicio__texto--suave">
+            Errar faz parte. O objetivo é aprender a se proteger.
+          </p>
+        </div>
+        <div class="rodape-fixo">
+          <button id="btn-comecar" class="botao botao--primario" type="button">Começar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tela-cenario" class="tela">
+      <div class="celular">
+        <div class="celular__barra-status" aria-hidden="true">
+          <span id="relogio">14:32</span>
+          <span>📶 🔋</span>
+        </div>
+
+        <div id="cabecalho-app" class="celular__cabecalho">
+          <div id="avatar" class="avatar" aria-hidden="true">🏦</div>
+          <div class="celular__contato">
+            <strong id="remetente">Banco</strong>
+            <small id="canal">WhatsApp</small>
+          </div>
+          <div id="progresso" class="progresso" aria-live="polite">
+            <span id="progresso-texto" class="progresso__texto">1 de 7</span>
+            <span id="progresso-barra" class="progresso__barra" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div id="conversa" class="conversa" aria-live="polite"></div>
+
+        <div id="area-resposta" class="celular__resposta celular__resposta--oculta">
+          <p id="pergunta" class="celular__pergunta">O que você acha dessa mensagem?</p>
+          <div id="botoes-resposta" class="botoes-resposta"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tela-final" class="tela">
+      <div class="final">
+        <div class="final__topo">
+          <div id="final-icone" class="final__icone" aria-hidden="true">🏆</div>
+          <h2 id="final-titulo" class="final__titulo">Você terminou!</h2>
+          <p id="final-placar" class="final__placar"></p>
+        </div>
+        <div class="final__corpo">
+          <p id="final-mensagem" class="final__mensagem"></p>
+          <h3 class="dicas__titulo">Lembre sempre</h3>
+          <ul id="lista-dicas" class="dicas__lista"></ul>
+        </div>
+        <div class="rodape-fixo">
+          <button id="btn-reiniciar" class="botao botao--primario" type="button">Jogar de novo</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="modal" class="folha folha--oculta" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+    <div class="folha__caixa">
+      <div class="folha__topo">
+        <div id="modal-icone" class="folha__icone" aria-hidden="true">✅</div>
+        <h2 id="modal-titulo" class="folha__titulo">Você acertou!</h2>
+      </div>
+      <div class="folha__corpo">
+        <p id="modal-resumo" class="folha__resumo"></p>
+        <p id="modal-sinais-titulo" class="folha__sinais-titulo"></p>
+        <ul id="modal-sinais" class="folha__sinais"></ul>
+      </div>
+      <div class="rodape-fixo">
+        <button id="btn-continuar" class="botao botao--primario" type="button">Próxima mensagem</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/cenarios.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
