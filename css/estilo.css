@@ -79,6 +79,19 @@ body {
 .botao--primario { background: var(--acao); }
 .botao--primario:hover { background: var(--acao-escura); }
 
+.botao--secundario {
+  background: var(--cartao);
+  color: var(--acao);
+  border: 3px solid var(--acao);
+}
+.botao--secundario:hover { background: var(--papel); }
+
+.rodape-fixo--duplo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
 .botao--confiavel { background: var(--seguro); }
 .botao--confiavel:hover { background: var(--seguro-escuro); }
 

@@ -45,6 +45,7 @@
     btnContinuar: $("btn-continuar"),
     btnComecar: $("btn-comecar"),
     btnReiniciar: $("btn-reiniciar"),
+    btnFinalizar: $("btn-finalizar"),
     finalIcone: $("final-icone"),
     finalTitulo: $("final-titulo"),
     finalPlacar: $("final-placar"),
@@ -264,5 +265,6 @@
 
   el.btnComecar.addEventListener("click", iniciar);
   el.btnReiniciar.addEventListener("click", iniciar);
+  el.btnFinalizar.addEventListener("click", () => mostrarTela("inicio"));
   el.btnContinuar.addEventListener("click", continuar);
 })();
